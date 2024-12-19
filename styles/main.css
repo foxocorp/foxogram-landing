@@ -7,7 +7,6 @@ body, html {
     justify-content: center;
     background-color: #0a0a0a;
     background-image: url('../assets/svg/grid-background.svg'), url('../assets/svg/noise-effect.svg');
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 0 20px;
