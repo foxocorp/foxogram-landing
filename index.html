@@ -12,7 +12,6 @@
     <style>
         body, html {
             font-family: "Inter", sans-serif;
-            margin: 0;
             height: 100%;
             display: flex;
             align-items: center;
@@ -22,16 +21,21 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-attachment: fixed;
             padding: 0 20px;
+        }
+
+        .wrapper {
+            margin-left: 85px;
         }
 
         .content {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 200px;
-            margin-bottom: 155px;
+            gap: 140px;
             text-align: left;
+            margin-bottom: 60px;
 
             @media (max-width: 768px) {
                 flex-direction: column;
@@ -153,7 +157,7 @@
     </style>
 </head>
 <body>
-    <div class="error-page-wrapper">
+    <div class="wrapper">
         <div class="content">
             <div class="bolt">
                 <img src="./bolt.svg" alt="">
