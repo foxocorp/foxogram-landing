@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="foxogram.svg">
+    <link rel="icon" href="/assets/svg/foxogram.svg">
 
     <style>
         body, html {
@@ -18,20 +18,25 @@
             align-items: center;
             justify-content: center;
             background-color: #0a0a0a;
-            background-image: url('./grid-background.svg'), url('noise-effect.svg');
+            background-image: url('/assets/svg/grid-background.svg'), url('/assets/svg/noise-effect.svg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-attachment: fixed;
             padding: 0 20px;
+        }
+
+        .wrapper {
+            margin-left: 85px;
         }
 
         .content {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 200px;
-            margin-bottom: 155px;
+            gap: 140px;
             text-align: left;
+            margin-bottom: 60px;
 
             @media (max-width: 768px) {
                 flex-direction: column;
@@ -54,7 +59,7 @@
                 position: absolute;
                 width: 100%;
                 height: 150%;
-                background: url('./bolt.svg');
+                background: url('/assets/svg/bolt.svg');
                 background-size: cover;
                 filter: blur(70px);
             }
@@ -153,10 +158,10 @@
     </style>
 </head>
 <body>
-    <div class="error-page-wrapper">
+    <div class="wrapper">
         <div class="content">
             <div class="bolt">
-                <img src="./bolt.svg" alt="">
+                <img src="/assets/svg/bolt.svg" alt="">
             </div>
             <div class="text">
                 <h1>Foxogram is being <span style="color: #4a89ff">rewritten</span></h1>
